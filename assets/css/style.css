@@ -21,6 +21,29 @@
     background-color: #525252;
 }
 
+/*----------------------SPecial padding and margins and text*/
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: Exo, sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
 /*----------------------Heading */
 .header {
     margin: 0;
@@ -36,9 +59,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 360px;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 05s ease-in-out;
 }
 
 .name {
@@ -78,7 +99,7 @@
 .menuitem {
     height: 120px;
     text-align: center;
-    padding: 0;   
+    padding: 0;
 }
 
 .menuitem a {
@@ -113,3 +134,46 @@
 }
 
 /*----------------------Footer */
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf i {
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: #d18d27;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #d18d27;
+}
+
+#footer-details {
+    padding: 20px;
+}
