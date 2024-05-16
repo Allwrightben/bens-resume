@@ -15,15 +15,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to detect if the device is a mobile device
+            function isMobileDevice() {
+                return (typeof window.orientation!== "undefined") || (navigator.userAgent.indexOf('IEMobile')!== -1);
+            }
+        
+            // Get the link element
+            const link = document.getElementById('jsresume');
+        
+            // Check if the device is a mobile device
+            if (isMobileDevice()) {
+                // Change the link behavior for mobile devices
+                link.setAttribute('href', '/resume.html#targetmobile');
+            } else {
+                // Change the link behavior for desktop devices
+                link.setAttribute('href', '/resume.html');
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to detect if the device is a mobile device
+            function isMobileDevice() {
+                return (typeof window.orientation!== "undefined") || (navigator.userAgent.indexOf('IEMobile')!== -1);
+            }
+        
+            // Get the link element
+            const link = document.getElementById('jshome');
+        
+            // Check if the device is a mobile device
+            if (isMobileDevice()) {
+                // Change the link behavior for mobile devices
+                link.setAttribute('href', '/index.html#targetmobile');
+            } else {
+                // Change the link behavior for desktop devices
+                link.setAttribute('href', '/index.html');
+            }
+        });document.addEventListener("DOMContentLoaded", function() {
+            // Function to detect if the device is a mobile device
+            function isMobileDevice() {
+                return (typeof window.orientation!== "undefined") || (navigator.userAgent.indexOf('IEMobile')!== -1);
+            }
+        
+            // Get the link element
+            const link = document.getElementById('jscontact');
+        
+            // Check if the device is a mobile device
+            if (isMobileDevice()) {
+                // Change the link behavior for mobile devices
+                link.setAttribute('href', '/contact.html#targetmobile');
+            } else {
+                // Change the link behavior for desktop devices
+                link.setAttribute('href', '/contact.html');
+            }
+        });        
+        </script>
 </head>
 
 <body>
-
     <header>
         <div class="row no-gutters">
-            <a href="index.html" class="col-md-4 logo">
-
-            </a>
+            <a class="col-md-4 logo" href="index.html"></a>
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
@@ -31,20 +84,20 @@
                         <h1 class="title">Full Stack Developer</h1>
                     </div>
                 </div>
-                <div class="row no-gutters">
+                <div class="row no-gutters" id="targetmobile">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem">
-                                <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home"
+                                <a id="jshome" href="/index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home"
                                         aria-hidden="true"></i><span>Home</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem">
-                                <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap"
-                                        aria-hidden="true"></i><span>Resume</span></a>
+                                <a id="jsresume" href="/resume.html" class="hvr-sweep-to-bottom"><i
+                                        class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
-                                <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o"
-                                        aria-hidden="true"></i><span>Contact</span></a>
+                                <a id="jscontact" href="/contact.html" class="hvr-sweep-to-bottom"><i
+                                        class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
                                 <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-download"
@@ -53,7 +106,6 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
