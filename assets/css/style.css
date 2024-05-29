@@ -19,9 +19,19 @@
     color: ivory;
 }
 
+.bg-color-github {
+    background-color: darkolivegreen;
+    color: ivory;
+}
+
+.bg-color-interests {
+    background-color: maroon;
+    color: ivory;
+}
+
 .bg-color-work-history {
     background-color: #9b59b6;
-    color: ivory;
+    color: rgb(150, 150, 72);
 }
 
 .bg-color-contact {
@@ -35,6 +45,14 @@
 
 .ui-menu-color-resume {
     background-color: #9b59b6;
+}
+
+.ui-menu-color-github {
+    background-color: darkolivegreen;
+}
+
+.ui-menu-color-interests {
+    background-color: maroon;
 }
 
 .ui-menu-color-contact {

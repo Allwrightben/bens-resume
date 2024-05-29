@@ -23,4 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateLinkBehavior('#jsresume', 'resume.html', 'resume.html');
     updateLinkBehavior('#jshome', 'index.html', 'index.html');
     updateLinkBehavior('#jscontact', 'contact.html', 'contact.html');
+    updateLinkBehavior('#jsgithub', 'github.html', 'github.html');
+    updateLinkBehavior('#jsinterests', 'interests.html', 'interests.html');
 });
