@@ -15,67 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Function to detect if the device is a mobile device
-            function isMobileDevice() {
-                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf(
-                    'IEMobile') !== -1);
-            }
-
-            // Get the link element
-            const link = document.getElementById('jsresume');
-
-            // Check if the device is a mobile device
-            if (isMobileDevice()) {
-                // Change the link behavior for mobile devices
-                link.setAttribute('href', 'resume.html#targetmobile');
-            } else {
-                // Change the link behavior for desktop devices
-                link.setAttribute('href', 'resume.html');
-            }
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-            // Function to detect if the device is a mobile device
-            function isMobileDevice() {
-                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf(
-                    'IEMobile') !== -1);
-            }
-
-            // Get the link element
-            const link = document.getElementById('jshome');
-
-            // Check if the device is a mobile device
-            if (isMobileDevice()) {
-                // Change the link behavior for mobile devices
-                link.setAttribute('href', 'index.html#targetmobile');
-            } else {
-                // Change the link behavior for desktop devices
-                link.setAttribute('href', 'index.html');
-            }
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-            // Function to detect if the device is a mobile device
-            function isMobileDevice() {
-                return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf(
-                    'IEMobile') !== -1);
-            }
-
-            // Get the link element
-            const link = document.getElementById('jscontact');
-
-            // Check if the device is a mobile device
-            if (isMobileDevice()) {
-                // Change the link behavior for mobile devices
-                link.setAttribute('href', 'contact.html#targetmobile');
-            } else {
-                // Change the link behavior for desktop devices
-                link.setAttribute('href', 'contact.html');
-            }
-        });
-    </script>
 </head>
+<script src="assets/js/script.js"></script>
 
 <body>
     <header>

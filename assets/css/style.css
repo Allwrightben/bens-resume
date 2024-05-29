@@ -15,11 +15,13 @@
 }
 
 .bg-color-personal-info {
-    background-color: #f2f2f2;
+    background-color: #e67e22;
+    color: ivory;
 }
 
 .bg-color-work-history {
     background-color: #9b59b6;
+    color: ivory;
 }
 
 .bg-color-contact {
